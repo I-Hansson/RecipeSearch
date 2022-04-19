@@ -17,6 +17,7 @@ public class RecipeListItem extends AnchorPane {
     private Recipe recipe;
     @FXML private Label nameItem;
     @FXML private ImageView imageItem;
+    @FXML private ImageView mainIngImage;
 
     public RecipeListItem(Recipe recipe, RecipeSearchController recipeSearchController){
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("recipe_listitem.fxml"));

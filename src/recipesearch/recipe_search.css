@@ -1,2 +1,24 @@
 
+.text-normal{
+    -fx-font-size: 13px;
+    -fx-font-family: "Avenir Book";
+}
+.text-smaller{
+    -fx-font-size: 11px;
+    -fx-font-family: "Avenir Book";
+}
+.text-larger{
+    -fx-font-size: 15px;
+    -fx-font-family: "Avenir Book";
 
+}
+#logo{
+    -fx-font-family: "Phosphate";
+    -fx-font-size: 48px;
+}
+#logo-twirl{
+    -fx-font-family: "SignPanter";
+    -fx-font-size: 64;
+    -fx-text-fill: #FFAC33;
+    -fx-rotate: -20;
+}
