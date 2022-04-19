@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<fx:root onMouseClicked="#onClick" prefHeight="100.0" prefWidth="495.0" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="imageItem" fitHeight="120.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="345.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../../recipes/recipe1.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="nameItem" text="Stekta agg" AnchorPane.bottomAnchor="90.0" AnchorPane.leftAnchor="180.0" AnchorPane.topAnchor="10.0" />
+   </children>
+</fx:root>
