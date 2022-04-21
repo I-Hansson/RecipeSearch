@@ -10,11 +10,13 @@ import java.util.ResourceBundle;
 import javafx.application.Platform;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
+import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.image.WritableImage;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.FlowPane;
 import javafx.util.Callback;
@@ -421,5 +423,36 @@ public class RecipeSearchController implements Initializable {
     public void closeButtonMouseExited(){
         closeImageView.setImage(new Image(getClass().getClassLoader().getResourceAsStream(
                 "RecipeSearch/resources/icon_close.png")));
+    }
+    @FXML
+    public void mouseTrap(Event event){
+        event.consume();
+    }
+    public Image getSquareImage(Image image){
+
+        int x = 0;
+        int y = 0;
+        int width = 0;
+        int height = 0;
+
+        if(image.getWidth() > image.getHeight()){
+            width = (int) image.getHeight();
+            height = (int) image.getHeight();
+            x = (int)(image.getWidth() - width)/2;
+            y = 0;
+        }
+
+        else if(image.getHeight() > image.getWidth()){
+            width = (int) image.getWidth();
+            height = (int) image.getWidth();
+            x = 0;
+            y = (int) (image.getHeight() - height)/2;
+        }
+
+        else{
+            //Width equals Height, return original image
+            return image;
+        }
+        return new WritableImage(image.getPixelReader(), x, y, width, height);
     }
 }
