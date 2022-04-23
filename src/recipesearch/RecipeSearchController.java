@@ -20,6 +20,7 @@ import javafx.scene.image.WritableImage;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.FlowPane;
 import javafx.util.Callback;
+import se.chalmers.ait.dat215.lab2.Ingredient;
 import se.chalmers.ait.dat215.lab2.Recipe;
 import se.chalmers.ait.dat215.lab2.RecipeDatabase;
 
@@ -210,7 +211,12 @@ public class RecipeSearchController implements Initializable {
         detPriceLabel.setText(recipe.getPrice() + " Kr");
         detDiscTextArea.setText(recipe.getDescription());
         detInsTextArea.setText(recipe.getInstruction());
-        detIngTextArea.setText(recipe.getIngredients().toString());
+        StringBuilder str = new StringBuilder();
+        for (Ingredient ING : recipe.getIngredients()){
+            str.append(ING );
+            str.append("\r\n");
+        }
+        detIngTextArea.setText(str.toString());
         detportLabel.setText(recipe.getServings() + " Portioner");
     }
 

@@ -28,7 +28,7 @@
                               <Image url="@../../recipes/recipe1.jpg" />
                            </image>
                         </ImageView>
-                        <Label fx:id="detNameItem" layoutX="236.0" layoutY="22.0" prefHeight="43.0" prefWidth="371.0" styleClass="text-larger" text="Stekta ägg" AnchorPane.topAnchor="22.0" />
+                        <Label id="logo-inlistitem" fx:id="detNameItem" layoutX="236.0" layoutY="22.0" prefHeight="43.0" prefWidth="371.0" text="Stekta ägg" AnchorPane.topAnchor="22.0" />
                         <ImageView fx:id="detcuisineImageview" fitHeight="34.0" fitWidth="34.0" layoutX="170.0" layoutY="143.0" pickOnBounds="true" preserveRatio="true" styleClass="borders" AnchorPane.leftAnchor="175.0">
                            <image>
                               <Image url="@resources/icon_flag_sweden.png" />
@@ -51,7 +51,7 @@
                         </ImageView>
                         <Label fx:id="detTimeLabel" layoutX="438.0" layoutY="81.0" prefHeight="17.0" prefWidth="66.0" text="0 Minuter" />
                         <Label fx:id="detPriceLabel" layoutX="531.0" layoutY="80.0" styleClass="0 Kr" text="Label" />
-                        <TextArea fx:id="detDiscTextArea" editable="false" layoutX="226.0" layoutY="113.0" prefHeight="61.0" prefWidth="454.0" styleClass="text-normal" wrapText="true" />
+                        <TextArea fx:id="detDiscTextArea" editable="false" layoutX="226.0" layoutY="113.0" prefHeight="79.0" prefWidth="454.0" styleClass="text-normal" wrapText="true" />
                         <Label layoutX="226.0" layoutY="192.0" prefHeight="19.0" prefWidth="73.0" text="Tillagning:">
                            <styleClass>
                               <String fx:value="under-rubrik" />
@@ -65,7 +65,7 @@
                               <String fx:value="under-rubrik" />
                            </styleClass>
                         </Label>
-                        <TextArea fx:id="detIngTextArea" editable="false" layoutX="29.0" layoutY="260.0" prefHeight="158.0" prefWidth="186.0" styleClass="text-normal" wrapText="true" />
+                        <TextArea fx:id="detIngTextArea" editable="false" layoutX="30.0" layoutY="243.0" prefHeight="200.0" prefWidth="186.0" styleClass="text-normal" wrapText="true" />
                         <Label fx:id="detportLabel" layoutX="22.0" layoutY="226.0" prefHeight="17.0" prefWidth="85.0" text="porttioner" />
                         <ImageView fx:id="closeImageView" fitHeight="50.0" fitWidth="25.0" layoutX="713.0" layoutY="11.0" onMouseEntered="#closeButtonMouseEntered" onMouseExited="#closeButtonMouseExited" onMousePressed="#closeButtonMousePressed" pickOnBounds="true" preserveRatio="true">
                            <image>

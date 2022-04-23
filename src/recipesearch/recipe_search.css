@@ -13,18 +13,22 @@
 
 }
 #logo{
-    -fx-font-family: "Phosphate";
-    -fx-font-size: 48px;
+    -fx-font-family: "Sigmar One";
+    -fx-font-size: 40px;
 }
 #logo-twirl{
-    -fx-font-family: "SignPanter";
-    -fx-font-size: 64;
+    -fx-font-family: "Berlin Sans FB";
+    -fx-font-size: 54;
     -fx-text-fill: #FFAC33;
     -fx-rotate: -20;
 }
 #logo-listitem{
-    -fx-font-size: 20px;
-    -fx-font-family: "Avenir Book";
+    -fx-font-size: 16px;
+    -fx-font-family: Elephant;
+}
+#logo-inlistitem {
+    -fx-font-size: 24px;
+    -fx-font-family: Elephant;
 }
 .static-obj-hint{
     -fx-border-width: 1px;

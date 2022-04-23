@@ -22,7 +22,7 @@
             <Image url="@resources/icon_flag_france.png" />
          </image>
       </ImageView>
-      <Label id="logo-listitem" fx:id="nameItem" layoutX="150.0" layoutY="-9.0" prefHeight="27.0" prefWidth="298.0" text="Stekta agg" AnchorPane.bottomAnchor="105.0" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="0.0" />
+      <Label id="logo-listitem" fx:id="nameItem" layoutX="152.0" layoutY="2.0" prefHeight="21.0" prefWidth="334.0" text="Stekta agg" AnchorPane.bottomAnchor="106.0" AnchorPane.leftAnchor="151.0" AnchorPane.topAnchor="1.0" />
       <ImageView fx:id="mainIngImage" fitHeight="20.0" fitWidth="23.0" layoutX="149.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="149.0" AnchorPane.topAnchor="30.0">
          <image>
             <Image url="@resources/icon_main_beef.png" />
@@ -34,7 +34,7 @@
          </image></ImageView>
       <Label fx:id="timeLabel" layoutX="275.0" layoutY="29.0" prefHeight="17.0" prefWidth="70.0" styleClass="text-normal" text="0 Minuter" AnchorPane.topAnchor="29.0" />
       <Label fx:id="costLabel" layoutX="354.0" layoutY="29.0" prefHeight="17.0" prefWidth="40.0" styleClass="text-normal" text="10 Kr" AnchorPane.topAnchor="28.0" />
-      <Label fx:id="discLabel" graphicTextGap="1.0" layoutX="151.0" layoutY="51.0" prefHeight="46.0" prefWidth="362.0" styleClass="text-smaller" text="hejsan" wrapText="true" AnchorPane.bottomAnchor="19.0" AnchorPane.topAnchor="51.0" />
+      <Label fx:id="discLabel" alignment="TOP_LEFT" graphicTextGap="1.0" layoutX="150.0" layoutY="59.0" prefHeight="69.0" prefWidth="362.0" styleClass="text-smaller" text="hejsan" wrapText="true" AnchorPane.bottomAnchor="3.0" AnchorPane.topAnchor="59.0" />
    </children>
    <styleClass>
       <String fx:value="static-obj-hint" />
